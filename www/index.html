@@ -23,19 +23,33 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
-        <link rel="stylesheet" href="plugins/jquery_mobile/jquery.mobile.theme-1.3.1.min.css" />
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="plugins/jquery_mobile/jquery.mobile.theme-1.3.1.min.js"></script>
+        <script src="plugins/jquery/jquery-1.10.2.min.js"></script><!-- src="plugins/jquery_mobile/demos/js/jquery.js" -->
+		<script src="js/connect.js"></script>
+		<script src="js/animation.js"></script>
+        <script src="plugins/jquery_mobile/jquery.mobile-1.3.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="plugins/jquery_mobile/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="plugins/jquery_mobile/jquery.mobile.structure-1.3.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="plugins/jquery_mobile/jquery.mobile.theme-1.3.1.min.css" />
         <title>DBIS Universit&auml;t Ulm</title>
     </head>
     <body>
-        <!--<div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div id="menu" data-role="page" data-theme="a">
+            <div data-role="header"><h1 class="ui-title">DBIS Ulm University</h1></div>
+            <div data-role="content" class="content">
+				<div data-role="listview">
+                    <li><a href="sites/news.html" data-transition="slide">Neuigkeiten</a></li>
+                    <li><a href="sites/events.html" data-transition="slide">Veranstaltungen</a></li>
+                    <li><a href="sites/teaching.html" data-transition="slide">Lehre</a></li>
+                    <li><a href="sites/employees.html" data-transition="slide">Mitarbeiter</a></li>
+                    <li><a href="sites/publications.html" data-transition="slide">Publikationen</a></li>
+                    <li><a href="sites/researchProjects.html" data-transition="slide">Forschungsprojekte</a></li>
+                    <li><a href="http://www.uni-ulm.de">DBIS-Webseite</a></li>
+                    <li><a href="sites/contact.html" data-transition="slide">Kontakt</a></li>
+                    <li><a href="sites/about.html" data-transition="slide">Über uns</a></li>
+                    <li><a href="sites/settings.html" data-transition="slide">Einstellungen</a></li>
+                </div>
             </div>
-        </div>-->
+        </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
@@ -43,3 +57,10 @@
         </script>
     </body>
 </html>
+<!--<div class="app">
+ <h1>Apache Cordova</h1>
+ <div id="deviceready" class="blink">
+ <p class="event listening">Connecting to Device</p>
+ <p class="event received">Device is Ready</p>
+ </div>
+ </div>-->
